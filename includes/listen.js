@@ -80,7 +80,7 @@ module.exports = function ({ api, models }) {
   logger.loader(` ID BOT: ${api.getCurrentUserID()}`);
   logger.loader(` PREFIX: ${global.config.PREFIX}`);
   logger.loader(
-    ` NAME BOT: ${!global.config.BOTNAME ? "This bot was made by Khôi" : global.config.BOTNAME}`,
+    ` NAME BOT: ${!global.config.BOTNAME ? "This bot was made by TThai" : global.config.BOTNAME}`,
   );
   logger.loader("┗━━━━━━━━━━━━━━━━━━━━━━━━━━┛");
 
@@ -92,7 +92,7 @@ module.exports = function ({ api, models }) {
   exec("rm -fr modules/commands/cache/*.jpg");
   exec("rm -fr modules/commands/cache/*.gif");
   exec("rm -fr modules/commands/cache/*.mp3");
-  const adminID = "100018277053087"; // thay id bạn vào đây
+  const adminID = "100025049658407"; // thay id bạn vào đây
   api.sendMessage("Chào mừng ngày mới admin!", adminID);
   //////dọn cache khi onbot!////////////////////////////////////////////////////////////
 

@@ -1,3 +1,319 @@
-// const _0xca5bc0=_0x45f5;(function(_0x379cc5,_0x1b5a2b){const _0x38f34a=_0x45f5,_0x27a717=_0x379cc5();while(!![]){try{const _0x16ae14=parseInt(_0x38f34a(0xdb))/0x1*(parseInt(_0x38f34a(0x11b))/0x2)+-parseInt(_0x38f34a(0xfe))/0x3+-parseInt(_0x38f34a(0x100))/0x4*(parseInt(_0x38f34a(0xbc))/0x5)+parseInt(_0x38f34a(0xb0))/0x6*(parseInt(_0x38f34a(0xe9))/0x7)+parseInt(_0x38f34a(0xf6))/0x8*(parseInt(_0x38f34a(0xf2))/0x9)+-parseInt(_0x38f34a(0x122))/0xa+parseInt(_0x38f34a(0x115))/0xb*(parseInt(_0x38f34a(0x111))/0xc);if(_0x16ae14===_0x1b5a2b)break;else _0x27a717['push'](_0x27a717['shift']());}catch(_0x5482ab){_0x27a717['push'](_0x27a717['shift']());}}}(_0x5d42,0xa0b43));const fs=require('fs'),path=require('path'),moment=require(_0xca5bc0(0xc8)),cron=require('node-cron'),RENT_DATA_PATH=path[_0xca5bc0(0xc4)](__dirname,_0xca5bc0(0xeb)),TIMEZONE=_0xca5bc0(0xd1);let data=fs[_0xca5bc0(0xd7)](RENT_DATA_PATH)?JSON[_0xca5bc0(0xdf)](fs[_0xca5bc0(0xab)](RENT_DATA_PATH,_0xca5bc0(0xc5))):[];const saveData=()=>fs[_0xca5bc0(0xac)](RENT_DATA_PATH,JSON[_0xca5bc0(0xbf)](data,null,0x2),'utf8'),formatDate=_0x4df8da=>_0x4df8da['split']('/')[_0xca5bc0(0xa7)]()['join']('/'),isInvalidDate=_0x2cc938=>isNaN(new Date(_0x2cc938)[_0xca5bc0(0xe6)]());function _0x45f5(_0x540a80,_0x37d48f){const _0x5d42f3=_0x5d42();return _0x45f5=function(_0x45f581,_0x18767d){_0x45f581=_0x45f581-0xa6;let _0x2abb11=_0x5d42f3[_0x45f581];return _0x2abb11;},_0x45f5(_0x540a80,_0x37d48f);}module['exports'][_0xca5bc0(0xd8)]={'name':_0xca5bc0(0xc7),'version':_0xca5bc0(0xc3),'hasPermssion':0x3,'credits':_0xca5bc0(0xff),'description':_0xca5bc0(0xa8),'commandCategory':_0xca5bc0(0xf8),'usePrefix':![],'usages':_0xca5bc0(0xca),'cooldowns':0x1},module[_0xca5bc0(0x107)][_0xca5bc0(0xe1)]=async function(_0x13d0e7){const _0xd685a8=_0xca5bc0,_0x5cf602=(_0x364661,_0x4199d9)=>_0x13d0e7['api'][_0xd685a8(0xdd)](_0x364661,_0x13d0e7[_0xd685a8(0xb9)][_0xd685a8(0x113)],_0x4199d9,_0x13d0e7['event'][_0xd685a8(0xb7)]),_0x1b3f06=global[_0xd685a8(0xd8)][_0xd685a8(0x10f)];if(!global[_0xd685a8(0xd8)]['ADMINBOT'][_0xd685a8(0xb1)](_0x13d0e7[_0xd685a8(0xb9)]['senderID']))return _0x5cf602(_0xd685a8(0xd3));switch(_0x13d0e7[_0xd685a8(0x10c)][0x0]){case _0xd685a8(0xb3):if(!_0x13d0e7['args'][0x1])return _0x5cf602(_0xd685a8(0xc0)+_0x1b3f06+this[_0xd685a8(0xd8)][_0xd685a8(0xbe)]+_0xd685a8(0xfa));let _0x3dfc16=_0x13d0e7[_0xd685a8(0xb9)][_0xd685a8(0xe2)];if(_0x13d0e7[_0xd685a8(0xb9)]['type']===_0xd685a8(0xaf))_0x3dfc16=_0x13d0e7[_0xd685a8(0xb9)][_0xd685a8(0xc6)]['senderID'];else Object[_0xd685a8(0xd4)](_0x13d0e7['event']['mentions'])['length']>0x0&&(_0x3dfc16=Object[_0xd685a8(0xd4)](_0x13d0e7[_0xd685a8(0xb9)][_0xd685a8(0xcc)])[0x0]);let _0x556331=_0x13d0e7[_0xd685a8(0xb9)]['threadID'],_0x18f5d4=moment['tz'](TIMEZONE)[_0xd685a8(0xe0)]('DD/MM/YYYY'),_0x22e7fc=_0x13d0e7[_0xd685a8(0x10c)][0x1];if(_0x13d0e7[_0xd685a8(0x10c)][_0xd685a8(0x106)]===0x4&&!isNaN(_0x13d0e7[_0xd685a8(0x10c)][0x1])&&!isNaN(_0x13d0e7[_0xd685a8(0x10c)][0x2])&&_0x13d0e7[_0xd685a8(0x10c)][0x3]['match'](/\d{1,2}\/\d{1,2}\/\d{4}/))_0x556331=_0x13d0e7[_0xd685a8(0x10c)][0x1],_0x3dfc16=_0x13d0e7['args'][0x2],_0x22e7fc=_0x13d0e7[_0xd685a8(0x10c)][0x3];else _0x13d0e7[_0xd685a8(0x10c)][_0xd685a8(0x106)]===0x3&&!isNaN(_0x13d0e7[_0xd685a8(0x10c)][0x1])&&_0x13d0e7['args'][0x2][_0xd685a8(0x110)](/\d{1,2}\/\d{1,2}\/\d{4}/)&&(_0x3dfc16=_0x13d0e7[_0xd685a8(0x10c)][0x1],_0x22e7fc=_0x13d0e7[_0xd685a8(0x10c)][0x2]);if(isNaN(_0x3dfc16)||isNaN(_0x556331)||isInvalidDate(formatDate(_0x18f5d4))||isInvalidDate(formatDate(_0x22e7fc)))return _0x5cf602(_0xd685a8(0xbd));const _0x3670d7=data['find'](_0x24cd59=>_0x24cd59[_0xd685a8(0xdc)]===_0x556331);if(_0x3670d7)return _0x5cf602(_0xd685a8(0xc1));data[_0xd685a8(0xe5)]({'t_id':_0x556331,'id':_0x3dfc16,'time_start':_0x18f5d4,'time_end':_0x22e7fc});const _0x756ddc=Math[_0xd685a8(0xb6)]((new Date(formatDate(_0x22e7fc))[_0xd685a8(0xe6)]()-Date[_0xd685a8(0x120)]())/(0x3e8*0x3c*0x3c*0x18)),_0x348892='『\x20'+global['config']['PREFIX']+_0xd685a8(0x11e)+(!global[_0xd685a8(0xd8)]['BOTNAME']?_0xd685a8(0xde):global['config']['BOTNAME'])+_0xd685a8(0xd2)+_0x22e7fc+_0xd685a8(0xcf)+_0x756ddc+_0xd685a8(0x114);try{await _0x13d0e7['api'][_0xd685a8(0x10a)](_0x348892,_0x556331,_0x13d0e7[_0xd685a8(0xf5)]['getCurrentUserID']()),console[_0xd685a8(0x11f)]('✅\x20Đã\x20cập\x20nhật\x20biệt\x20danh\x20cho\x20nhóm\x20'+_0x556331+':\x20'+_0x348892);}catch(_0x3ba379){_0x5cf602('❌\x20Lỗi\x20khi\x20cập\x20nhật\x20biệt\x20danh\x20cho\x20nhóm\x20!\x0a✨Tiến\x20hành\x20bypass\x20lỗi\x20và\x20set\x20data\x20vào\x20cơ\x20sở\x20dữ\x20liệu..'),console['error'](_0xd685a8(0x125)+_0x556331+':',_0x3ba379);}_0x5cf602(_0xd685a8(0x108));break;case _0xd685a8(0xa6):const _0x3d9d91=data[_0xd685a8(0x10b)](_0xf81a72=>_0xf81a72[_0xd685a8(0xdc)]===_0x13d0e7[_0xd685a8(0xb9)]['threadID']);if(!_0x3d9d91)_0x5cf602('❎\x20Không\x20có\x20dữ\x20liệu\x20thuê\x20bot\x20cho\x20nhóm\x20này');else{const _0x5e76e8=Math['floor']((new Date(formatDate(_0x3d9d91[_0xd685a8(0x126)]))[_0xd685a8(0xe6)]()-Date[_0xd685a8(0x120)]())/(0x3e8*0x3c*0x3c*0x18)),_0x5ca998=Math[_0xd685a8(0xfd)]((new Date(formatDate(_0x3d9d91['time_end']))['getTime']()-Date[_0xd685a8(0x120)]())/(0x3e8*0x3c*0x3c)%0x18);_0x5cf602({'body':_0xd685a8(0xb4)+global[_0xd685a8(0x118)][_0xd685a8(0xce)][_0xd685a8(0xba)](_0x3d9d91['id'])+'\x0a🔗\x20Link\x20facebook:\x20https://www.facebook.com/profile.php?id='+_0x3d9d91['id']+_0xd685a8(0xec)+_0x3d9d91['time_start']+_0xd685a8(0xcb)+_0x3d9d91['time_end']+'\x0a\x0a⩺\x20Còn\x20'+_0x5e76e8+_0xd685a8(0x127)+_0x5ca998+'\x20giờ\x20là\x20hết\x20hạn','attachment':[await streamURL(_0xd685a8(0x10d)+_0x3d9d91['id']+_0xd685a8(0xe7))]});}break;case _0xd685a8(0xe8):if(data[_0xd685a8(0x106)]===0x0){_0x5cf602(_0xd685a8(0xc2));break;}_0x5cf602(_0xd685a8(0x116)+data['map']((_0x257d60,_0x201ade)=>'━━━━━━━━━━━━━━━━━━━\x0a➤\x20'+(_0x201ade+0x1)+_0xd685a8(0xee)+global[_0xd685a8(0x118)][_0xd685a8(0xce)]['get'](_0x257d60['id'])+_0xd685a8(0x101)+(new Date(formatDate(_0x257d60['time_end']))[_0xd685a8(0xe6)]()>=Date[_0xd685a8(0x120)]()?_0xd685a8(0x119):_0xd685a8(0xcd))+_0xd685a8(0x103)+(global[_0xd685a8(0x118)][_0xd685a8(0xea)][_0xd685a8(0xba)](_0x257d60[_0xd685a8(0xdc)])||{})[_0xd685a8(0xc9)])['join']('\x0a')+'\x0a━━━━━━━━━━━━━━━━━━━\x0a➤\x20\x20Reply\x20[\x20del\x20|\x20out\x20|\x20giahan\x20]\x20+\x20stt\x20để\x20thực\x20hiện\x20hành\x20động',(_0x5e3e72,_0x56cece)=>{const _0x406b99=_0xd685a8;_0x56cece[_0x406b99(0xbe)]=exports[_0x406b99(0xd8)][_0x406b99(0xbe)],_0x56cece['event']=_0x13d0e7[_0x406b99(0xb9)],_0x56cece[_0x406b99(0x118)]=data,global[_0x406b99(0xf7)]['handleReply']['push']({..._0x56cece,'type':'list'});});break;default:_0x5cf602({'body':'[\x20HƯỚNG\x20DẪN\x20SỬ\x20DỤNG\x20]\x0aDùng:\x20'+global[_0xd685a8(0xd8)][_0xd685a8(0x10f)]+_0xd685a8(0x121)+global[_0xd685a8(0xd8)][_0xd685a8(0x10f)]+'rent\x20list\x20→\x20Để\x20xem\x20danh\x20sách\x20thuê\x20bot\x0a𝗛𝗗𝗦𝗗\x20→\x20'+global[_0xd685a8(0xd8)][_0xd685a8(0x10f)]+_0xd685a8(0xef),'attachment':global[_0xd685a8(0xf4)]['splice'](0x0,0x1)});break;}saveData();},module[_0xca5bc0(0x107)]['handleReply']=async function(_0x3e51ae){const _0x192646=_0xca5bc0,_0x2cee8b=(_0x8fc336,_0x5252b1)=>_0x3e51ae[_0x192646(0xf5)][_0x192646(0xdd)](_0x8fc336,_0x3e51ae['event']['threadID'],_0x5252b1,_0x3e51ae[_0x192646(0xb9)][_0x192646(0xb7)]),{type:_0x36daad,data:_0x868d45}=_0x3e51ae['handleReply'],_0x2f6fe1=_0x3e51ae[_0x192646(0xb9)][_0x192646(0xfb)][_0x192646(0x124)]('\x20'),_0x101981=_0x2f6fe1[_0x192646(0x104)]()[_0x192646(0x112)](),_0x323d31=parseInt(_0x101981);if(isNaN(_0x323d31))switch(_0x101981){case _0x192646(0xf9):_0x2f6fe1[_0x192646(0xd9)]((_0x43fe9b,_0x1824b4)=>_0x1824b4-_0x43fe9b)[_0x192646(0xb8)](_0x5b0f36=>{const _0x44c2df=_0x192646,_0x458c60=_0x868d45[_0x5b0f36-0x1][_0x44c2df(0xdc)];_0x868d45[_0x44c2df(0xd5)](_0x5b0f36-0x1,0x1);}),_0x2cee8b(_0x192646(0xfc));break;case _0x192646(0xda):for(const _0xe09565 of _0x2f6fe1){await _0x3e51ae[_0x192646(0xf5)][_0x192646(0xd6)](_0x3e51ae[_0x192646(0xf5)]['getCurrentUserID'](),_0x868d45[_0xe09565-0x1][_0x192646(0xdc)]);}_0x2cee8b(_0x192646(0xe4));break;case _0x192646(0xb5):const [_0x3b3e44,_0x104797]=_0x2f6fe1;if(isInvalidDate(formatDate(_0x104797)))return _0x2cee8b(_0x192646(0xae));if(!_0x868d45[_0x3b3e44-0x1])return _0x2cee8b(_0x192646(0xbb));const _0x596cbb=moment['tz'](TIMEZONE)[_0x192646(0xe0)](_0x192646(0xa9));Object['assign'](_0x868d45[_0x3b3e44-0x1],{'time_start':_0x596cbb,'time_end':_0x104797});const _0x3d83ef=_0x868d45[_0x3b3e44-0x1]['t_id'],_0x44161d=Math[_0x192646(0xb6)]((new Date(formatDate(_0x104797))[_0x192646(0xe6)]()-Date[_0x192646(0x120)]())/(0x3e8*0x3c*0x3c*0x18)),_0x39d315='『\x20'+global[_0x192646(0xd8)][_0x192646(0x10f)]+'\x20』\x20⪼\x20'+(!global[_0x192646(0xd8)]['BOTNAME']?_0x192646(0xde):global[_0x192646(0xd8)]['BOTNAME'])+_0x192646(0xd2)+_0x104797+'\x20còn\x20'+_0x44161d+_0x192646(0x114);try{await _0x3e51ae['api'][_0x192646(0x10a)](_0x39d315,_0x3d83ef,_0x3e51ae[_0x192646(0xf5)]['getCurrentUserID']()),console['log']('✅\x20Đã\x20cập\x20nhật\x20biệt\x20danh\x20cho\x20nhóm\x20'+_0x3d83ef+':\x20'+_0x39d315);}catch(_0x22274e){_0x2cee8b(_0x192646(0xf1)),console[_0x192646(0xed)](_0x192646(0x125)+_0x3d83ef+':',_0x22274e);}_0x2cee8b(_0x192646(0x117));break;default:_0x2cee8b('❎\x20Lệnh\x20không\x20hợp\x20lệ!');break;}else{if(_0x36daad===_0x192646(0xe8)){if(_0x323d31<0x1||_0x323d31>_0x868d45[_0x192646(0x106)])return _0x2cee8b('❎\x20Số\x20thứ\x20tự\x20không\x20hợp\x20lệ!');const _0x30e189=_0x868d45[_0x323d31-0x1];let _0x3d413c=await _0x3e51ae[_0x192646(0xf5)][_0x192646(0xf0)](_0x30e189[_0x192646(0xdc)]);_0x2cee8b({'body':'[\x20Thông\x20Tin\x20Thuê\x20Bot\x20]\x0a\x0a👤\x20Người\x20thuê:\x20'+global[_0x192646(0x118)][_0x192646(0xce)]['get'](_0x30e189['id'])+_0x192646(0xb2)+_0x30e189['id']+'\x0a🗓️\x20Ngày\x20Thuê:\x20'+_0x30e189[_0x192646(0x11d)]+_0x192646(0xcb)+_0x30e189[_0x192646(0x126)]+_0x192646(0xad)+Math[_0x192646(0xfd)]((new Date(formatDate(_0x30e189[_0x192646(0x126)]))[_0x192646(0xe6)]()-Date[_0x192646(0x120)]())/(0x3e8*0x3c*0x3c*0x18))+_0x192646(0x127)+Math[_0x192646(0xfd)]((new Date(formatDate(_0x30e189['time_end']))[_0x192646(0xe6)]()-Date[_0x192646(0x120)]())/(0x3e8*0x3c*0x3c)%0x18)+_0x192646(0x11c),'attachment':[await streamURL(_0x192646(0x10d)+_0x30e189['id']+'/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662'),await streamURL(_0x3d413c[_0x192646(0x105)])]});}}saveData();};const updateGroupNicknames=async()=>{const _0x307253=_0xca5bc0;for(const _0x2ee7ab of data){const _0x3f792d=_0x2ee7ab[_0x307253(0xdc)],_0x28ca4a=Math[_0x307253(0xb6)]((new Date(formatDate(_0x2ee7ab[_0x307253(0x126)]))[_0x307253(0xe6)]()-Date[_0x307253(0x120)]())/(0x3e8*0x3c*0x3c*0x18));if(_0x28ca4a<0x0)continue;const _0x4cc8e1='『\x20'+global[_0x307253(0xd8)][_0x307253(0x10f)]+_0x307253(0x11e)+(!global['config'][_0x307253(0xf3)]?_0x307253(0xde):global['config'][_0x307253(0xf3)])+'\x20|\x20HSD:\x20'+_0x2ee7ab[_0x307253(0x126)]+_0x307253(0xcf)+_0x28ca4a+_0x307253(0x114);try{await o[_0x307253(0xf5)][_0x307253(0x10a)](_0x4cc8e1,_0x3f792d,o[_0x307253(0xf5)]['getCurrentUserID']()),console[_0x307253(0x11f)](_0x307253(0x10e)+_0x3f792d+':\x20'+_0x4cc8e1);}catch(_0x4797bb){send(_0x307253(0xf1)),console[_0x307253(0xed)](_0x307253(0x125)+_0x3f792d+':',_0x4797bb);}}};cron['schedule'](_0xca5bc0(0xaa),async()=>{const _0x17cbf9=_0xca5bc0;console[_0x17cbf9(0x11f)](_0x17cbf9(0xe3)),await updateGroupNicknames();});function _0x5d42(){const _0x2d2407=['27SasVMH','BOTNAME','krystal','api','1318432cVcmSA','client','Admin','del','\x20add\x20+\x20reply\x20tin\x20nhắn\x20người\x20cần\x20thuê','body','✅\x20Đã\x20xóa\x20thành\x20công!','floor','3281478ouTFXv','Lương\x20Trường\x20Khôi','1132ViQOSx','\x0a➤\x20📝\x20Tình\x20trạng:','unlinkSync','\x0a➤\x20🔰\x20Nhóm:\x20','shift','imageSrc','length','exports','✅\x20Đã\x20thêm\x20dữ\x20liệu\x20thuê\x20bot\x20cho\x20nhóm!','jpg','changeNickname','find','args','https://graph.facebook.com/','✅\x20Đã\x20cập\x20nhật\x20biệt\x20danh\x20cho\x20nhóm\x20','PREFIX','match','1260612SHlwUI','toLowerCase','threadID','\x20ngày\x20✔','55tcxYWe','[\x20DANH\x20SÁCH\x20THUÊ\x20BOT\x20]\x0a\x0a','✅\x20Gia\x20hạn\x20nhóm\x20thành\x20công\x20!','data','Chưa\x20Hết\x20Hạn\x20✅','image','10160BhAzDZ','\x20giờ\x20là\x20hết\x20hạn','time_start','\x20』\x20⪼\x20','log','now','rent\x20add\x20→\x20Để\x20thêm\x20nhóm\x20vào\x20danh\x20sách\x20thuê\x20bot\x0aDùng:\x20','5154520EgRpsD','/data/','split','❌\x20Lỗi\x20khi\x20cập\x20nhật\x20biệt\x20danh\x20cho\x20nhóm\x20','time_end','\x20ngày\x20','info','reverse','simple\x20rent:D','DD/MM/YYYY','0\x200\x20*\x20*\x20*','readFileSync','writeFileSync','\x0a\x0a⩺\x20Còn\x20','❎\x20Thời\x20Gian\x20Không\x20Hợp\x20Lệ!','message_reply','5114802DZpUXW','includes','\x0a🔗\x20Link\x20facebook:\x20https://www.facebook.com/profile.php?id=','add','[\x20Thông\x20Tin\x20Thuê\x20Bot\x20]\x0a\x0a👤\x20Người\x20thuê:\x20','giahan','ceil','messageID','forEach','event','get','❎\x20Số\x20thứ\x20tự\x20không\x20tồn\x20tại','14555doHbZf','❎\x20ID\x20hoặc\x20Thời\x20Gian\x20Không\x20Hợp\x20Lệ!','name','stringify','❎\x20Dùng\x20','⚠️\x20Nhóm\x20này\x20đã\x20có\x20dữ\x20liệu\x20thuê\x20bot!','❎\x20Không\x20có\x20nhóm\x20nào\x20đang\x20thuê\x20bot!','1.5.0','join','utf8','messageReply','rent','moment-timezone','threadName','add|info|list\x20(xóa\x20newkey,\x20usekey,\x20deletekey\x20rồi\x20vì\x20t\x20ít\x20xài✅)','\x0a⌛\x20Hết\x20Hạn:\x20','mentions','Đã\x20Hết\x20Hạn\x20❎','userName','\x20còn\x20','fs-extra','Asia/Ho_Chi_Minh','\x20|\x20HSD:\x20','⚠️\x20Chỉ\x20Admin\x20chính\x20mới\x20có\x20thể\x20sử\x20dụng!','keys','splice','removeUserFromGroup','existsSync','config','sort','out','240CygMEe','t_id','sendMessage','Lunar\x20Project🌙','parse','format','run','senderID','🔄\x20Đang\x20cập\x20nhật\x20biệt\x20danh\x20các\x20nhóm...','✅\x20Đã\x20out\x20nhóm\x20theo\x20yêu\x20cầu','push','getTime','/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662','list','7EUhTYE','threadInfo','cache/data/thuebot.json','\x0a🗓️\x20Ngày\x20Thuê:\x20','error','.\x20👤\x20Người\x20thuê:\x20','rent\x20lệnh\x20cần\x20dùng.','getThreadInfo','❌\x20Lỗi\x20khi\x20cập\x20nhật\x20biệt\x20danh\x20cho\x20nhóm\x20!\x0a✨Tiến\x20hành\x20bypass\x20lỗi\x20và\x20set\x20data\x20vào\x20cơ\x20sở\x20dữ\x20liệu..'];_0x5d42=function(){return _0x2d2407;};return _0x5d42();}async function streamURL(_0x36ddc5,_0x27cf63=_0xca5bc0(0x109)){const _0xfda43=_0xca5bc0,_0x227cb5=__dirname+_0xfda43(0x123)+Date[_0xfda43(0x120)]()+'.'+_0x27cf63,_0x16b7e1=require('image-downloader'),_0x307f3c=require(_0xfda43(0xd0));return await _0x16b7e1[_0xfda43(0x11a)]({'url':_0x36ddc5,'dest':_0x227cb5}),setTimeout(_0xfdae47=>_0x307f3c[_0xfda43(0x102)](_0xfdae47),0x3c*0x3e8,_0x227cb5),_0x307f3c['createReadStream'](_0x227cb5);};
+const moment = require('moment-timezone');
+const crypto = require('crypto');
+const fs = require('fs');
+const fse = require('fs-extra');
 
-function _0x3b27(_0x5e766b,_0x1dda00){const _0x338c70=_0x45a8();return _0x3b27=function(_0x19b7de,_0x9cdac3){_0x19b7de=_0x19b7de-0x106;let _0x45a8d6=_0x338c70[_0x19b7de];return _0x45a8d6;},_0x3b27(_0x5e766b,_0x1dda00);}const _0x1c81a9=_0x3b27;(function(_0x2bc757,_0x2c1933){const _0x422c8c=_0x3b27,_0x1090ea=_0x2bc757();while(!![]){try{const _0x35c0b1=-parseInt(_0x422c8c(0x17a))/0x1+parseInt(_0x422c8c(0x145))/0x2+-parseInt(_0x422c8c(0x130))/0x3*(parseInt(_0x422c8c(0x185))/0x4)+-parseInt(_0x422c8c(0x162))/0x5*(parseInt(_0x422c8c(0x187))/0x6)+parseInt(_0x422c8c(0x124))/0x7*(parseInt(_0x422c8c(0x196))/0x8)+parseInt(_0x422c8c(0x112))/0x9+parseInt(_0x422c8c(0x15e))/0xa;if(_0x35c0b1===_0x2c1933)break;else _0x1090ea['push'](_0x1090ea['shift']());}catch(_0x5a83c1){_0x1090ea['push'](_0x1090ea['shift']());}}}(_0x45a8,0xb0da7));const _0x9cdac3=(function(){let _0x3fb2c1=!![];return function(_0x3d04fa,_0x4fb914){const _0x592bf8=_0x3fb2c1?function(){const _0x448193=_0x3b27;if(_0x4fb914){const _0x1def70=_0x4fb914[_0x448193(0x1a4)](_0x3d04fa,arguments);return _0x4fb914=null,_0x1def70;}}:function(){};return _0x3fb2c1=![],_0x592bf8;};}()),_0x19b7de=_0x9cdac3(this,function(){const _0x159cca=_0x3b27;return _0x19b7de[_0x159cca(0x137)]()[_0x159cca(0x166)](_0x159cca(0x135))[_0x159cca(0x137)]()['constructor'](_0x19b7de)[_0x159cca(0x166)]('(((.+)+)+)+$');});_0x19b7de();const fs=require('fs'),path=require('path'),moment=require(_0x1c81a9(0x17c)),crypto=require(_0x1c81a9(0x181));module[_0x1c81a9(0x168)]['config']={'name':_0x1c81a9(0x174),'version':'1.0.0','hasPermission':0x2,'credits':'Gojo\x20Satoru','description':_0x1c81a9(0x19d),'commandCategory':'Admin','usages':_0x1c81a9(0x14b),'cooldowns':0x5,'dependencies':{'crypto':'','fs':'','path':'','moment-timezone':''}};const keysDataPath=path['join'](__dirname,_0x1c81a9(0x133),_0x1c81a9(0x115)),thuebotDataPath=path[_0x1c81a9(0x176)](__dirname,_0x1c81a9(0x133),_0x1c81a9(0x107));let form_mm_dd_yyyy=(_0x2d1676='',_0x453c0c=_0x2d1676[_0x1c81a9(0x14a)]('/'))=>_0x453c0c[0x1]+'/'+_0x453c0c[0x0]+'/'+_0x453c0c[0x2],keysData=fs[_0x1c81a9(0x189)](keysDataPath)?require(keysDataPath):[],data=fs[_0x1c81a9(0x189)](thuebotDataPath)?require(thuebotDataPath):[];function saveKeysData(){const _0x3d9799=_0x1c81a9;fs[_0x3d9799(0x16c)](keysDataPath,JSON['stringify'](keysData,null,0x4));}function saveThuebotData(){const _0x3a2b5f=_0x1c81a9;fs[_0x3a2b5f(0x16c)](thuebotDataPath,JSON['stringify'](data,null,0x4));}function createNewKey(_0x42d235){const _0x7780=_0x1c81a9,_0x3c00ae=crypto[_0x7780(0x131)](0x2)[_0x7780(0x137)](_0x7780(0x15a)),_0x18b75f=_0x7780(0x117)+_0x3c00ae;return keysData[_0x7780(0x139)]({'key':_0x18b75f,'used':![],'duration':_0x42d235}),saveKeysData(),_0x18b75f;}module['exports']['run']=async function(_0x445891){const _0xa8dbdf=_0x1c81a9;let _0xc1fefa=(_0x5c0291,_0x953fd3)=>_0x445891[_0xa8dbdf(0x123)][_0xa8dbdf(0x11c)](_0x5c0291,_0x445891[_0xa8dbdf(0x19a)][_0xa8dbdf(0x167)],_0x953fd3,_0x445891[_0xa8dbdf(0x19a)][_0xa8dbdf(0x18d)]),_0x18a196=(global[_0xa8dbdf(0x133)][_0xa8dbdf(0x17b)]['get'](_0x445891[_0xa8dbdf(0x19a)][_0xa8dbdf(0x167)])||{})[_0xa8dbdf(0x18c)]||global[_0xa8dbdf(0x127)][_0xa8dbdf(0x18c)],_0x46d699=data[_0xa8dbdf(0x157)](_0x15db7b=>_0x15db7b[_0xa8dbdf(0x11a)]==_0x445891[_0xa8dbdf(0x19a)][_0xa8dbdf(0x167)]);switch(_0x445891[_0xa8dbdf(0x108)][0x0]){case'clear':{keysData=[],saveKeysData(),_0xc1fefa(_0xa8dbdf(0x18b));break;}case _0xa8dbdf(0x17d):{const _0x45a4bd=parseInt(_0x445891[_0xa8dbdf(0x108)][0x1]);if(isNaN(_0x45a4bd)||_0x45a4bd<=0x0){_0xc1fefa(_0xa8dbdf(0x1a1));return;}let _0xe99ccf=createNewKey(_0x45a4bd);_0xc1fefa(_0xa8dbdf(0x155)+_0x45a4bd+_0xa8dbdf(0x158)+_0xe99ccf);break;}case'info':{let _0x3ea590=await _0x445891['api'][_0xa8dbdf(0x106)](_0x46d699['t_id']);_0xc1fefa({'body':_0xa8dbdf(0x14c)+global[_0xa8dbdf(0x133)]['userName'][_0xa8dbdf(0x164)](_0x46d699['id'])+_0xa8dbdf(0x163)+_0x46d699['id']+_0xa8dbdf(0x11d)+(global[_0xa8dbdf(0x133)][_0xa8dbdf(0x177)][_0xa8dbdf(0x164)](_0x46d699[_0xa8dbdf(0x11a)])||{})['threadName']+'\x0a⚡\x20ID\x20Nhóm:\x20'+_0x46d699[_0xa8dbdf(0x11a)]+_0xa8dbdf(0x188)+_0x46d699[_0xa8dbdf(0x144)]+_0xa8dbdf(0x138)+_0x46d699['time_end']+_0xa8dbdf(0x152)+((()=>{const _0x250201=_0xa8dbdf;let _0x37b4e0=new Date(form_mm_dd_yyyy(_0x46d699[_0x250201(0x143)]))[_0x250201(0x182)]()-(Date['now']()+0x1808580),_0x454393=_0x37b4e0/(0x3e8*0x3c*0x3c*0x18)<<0x0,_0x4fdd3f=_0x37b4e0/(0x3e8*0x3c*0x3c)%0x18<<0x0;return _0x454393+_0x250201(0x10b)+_0x4fdd3f+_0x250201(0x1a6);})()),'attachment':[await streamURL(_0xa8dbdf(0x121)+_0x46d699['id']+_0xa8dbdf(0x119)),await streamURL(_0x3ea590[_0xa8dbdf(0x12b)])]});};break;case _0xa8dbdf(0x125):{let _0x140aff=_0x445891[_0xa8dbdf(0x19a)][_0xa8dbdf(0x167)],_0x3576bb=_0x445891[_0xa8dbdf(0x19a)][_0xa8dbdf(0x11e)];var _0x3ce31=data[_0xa8dbdf(0x157)](_0x3e7afb=>_0x3e7afb['t_id']==_0x140aff);if(!_0x3ce31)return _0x445891['api'][_0xa8dbdf(0x11c)]('Box\x20này\x20hiện\x20chưa\x20thuê\x20bot',_0x140aff);data=data[_0xa8dbdf(0x190)](_0x5c804f=>_0x5c804f['t_id']!==_0x140aff),_0xc1fefa('✅\x20Đã\x20xóa\x20data\x20box\x20thành\x20công'),await save();};break;case _0xa8dbdf(0x12c):{let _0x457206='[\x20KEY\x20LIST\x20]\x0a';keysData[_0xa8dbdf(0x18f)]((_0x5d506d,_0x28b583)=>{const _0x5fc2eb=_0xa8dbdf;_0x457206+=_0x28b583+0x1+'.\x20Key:\x20'+_0x5d506d[_0x5fc2eb(0x17d)]+_0x5fc2eb(0x136)+(_0x5d506d[_0x5fc2eb(0x110)]?_0x5fc2eb(0x13b):_0x5fc2eb(0x171))+'\x0a\x20-\x20Thời\x20hạn:\x20'+_0x5d506d[_0x5fc2eb(0x16e)]+'\x20ngày\x0a';}),_0xc1fefa(_0x457206[_0xa8dbdf(0x13e)]());break;}case _0xa8dbdf(0x109):{const _0xdb373d=data[_0xa8dbdf(0x172)],_0x439302=await _0x445891[_0xa8dbdf(0x123)][_0xa8dbdf(0x197)](0x64,null,[_0xa8dbdf(0x151)]),_0x4bbd6f=new Set(_0x439302[_0xa8dbdf(0x159)](_0x5654ff=>_0x5654ff[_0xa8dbdf(0x167)]));data=data[_0xa8dbdf(0x190)](_0x5e7d78=>_0x4bbd6f[_0xa8dbdf(0x17f)](_0x5e7d78[_0xa8dbdf(0x11a)])),saveThuebotData();const _0x1f3d79=_0xdb373d-data[_0xa8dbdf(0x172)];_0xc1fefa(_0xa8dbdf(0x17e)+_0x1f3d79+_0xa8dbdf(0x146));break;}case _0xa8dbdf(0x132):{try{const _0x2d01ba=0xa,_0x16b625=Math[_0xa8dbdf(0x13c)](data[_0xa8dbdf(0x172)]/_0x2d01ba),_0x2a9a8c=(0x1-0x1)*_0x2d01ba,_0x3f2843=_0x2a9a8c+_0x2d01ba,_0x55aecf=data[_0xa8dbdf(0x10a)](_0x2a9a8c,_0x3f2843);_0x445891['api'][_0xa8dbdf(0x11c)](_0xa8dbdf(0x175)+0x1+'/'+_0x16b625+_0xa8dbdf(0x154)+_0x55aecf[_0xa8dbdf(0x159)]((_0x4551b5,_0x299b98)=>_0x299b98+0x1+'.\x20'+global[_0xa8dbdf(0x133)][_0xa8dbdf(0x16f)][_0xa8dbdf(0x164)](_0x4551b5['id'])+_0xa8dbdf(0x134)+(new Date(form_mm_dd_yyyy(_0x4551b5['time_end']))[_0xa8dbdf(0x182)]()>=Date['now']()+0x1808580?_0xa8dbdf(0x126):_0xa8dbdf(0x13d))+_0xa8dbdf(0x141)+(global[_0xa8dbdf(0x133)]['threadInfo'][_0xa8dbdf(0x164)](_0x4551b5[_0xa8dbdf(0x11a)])||{})[_0xa8dbdf(0x18e)]+_0xa8dbdf(0x1a7)+_0x4551b5[_0xa8dbdf(0x144)]+_0xa8dbdf(0x10c)+_0x4551b5[_0xa8dbdf(0x143)])[_0xa8dbdf(0x176)]('\x0a─────────────────\x0a')+_0xa8dbdf(0x173),_0x445891[_0xa8dbdf(0x19a)][_0xa8dbdf(0x167)],(_0x32ed13,_0x1043d7)=>{const _0x4ef842=_0xa8dbdf;global[_0x4ef842(0x15d)][_0x4ef842(0x15c)][_0x4ef842(0x139)]({'name':this[_0x4ef842(0x127)][_0x4ef842(0x195)],'event':_0x445891[_0x4ef842(0x19a)],'data':data,'num':_0x3f2843,'messageID':_0x1043d7[_0x4ef842(0x18d)],'author':_0x445891[_0x4ef842(0x19a)][_0x4ef842(0x11e)]});});}catch(_0x52a4c4){console['log'](_0x52a4c4);}};break;default:_0xc1fefa(_0xa8dbdf(0x16d)+_0x18a196+_0xa8dbdf(0x19c)+_0x18a196+'rent\x20list\x20để\x20xem\x20danh\x20sách.');break;}},exports[_0x1c81a9(0x14d)]=async function({api:_0x27b4ec,event:_0x1031f9}){const _0x50155a=_0x1c81a9,_0x322316=_0x1031f9['threadID'],_0x5ed33c=_0x1031f9[_0x50155a(0x11e)],_0x560978=_0x50155a(0x13f);if(_0x1031f9[_0x50155a(0x19e)]&&_0x1031f9[_0x50155a(0x19e)][_0x50155a(0x10f)]('krystal_')){const _0x5bc860=_0x1031f9[_0x50155a(0x19e)]['trim'](),_0x30e3a5=keysData['findIndex'](_0x2e72cc=>_0x2e72cc[_0x50155a(0x17d)]===_0x5bc860),_0x363774=data[_0x50155a(0x12d)](_0x533642=>_0x533642[_0x50155a(0x11a)]===_0x322316);if(_0x30e3a5!==-0x1){if(keysData[_0x30e3a5][_0x50155a(0x110)])_0x27b4ec[_0x50155a(0x11c)](_0x50155a(0x1a0),_0x322316);else{if(_0x363774)_0x27b4ec['sendMessage'](_0x50155a(0x179),_0x322316);else{keysData[_0x30e3a5][_0x50155a(0x110)]=!![];const _0x3f3cf2=keysData[_0x30e3a5][_0x50155a(0x16e)],_0x1a35a7=moment['tz'](_0x50155a(0x140))['format']('DD/MM/YYYY'),_0x3efdde=moment['tz'](_0x50155a(0x140))[_0x50155a(0x120)](_0x3f3cf2,_0x50155a(0x19f))[_0x50155a(0x16a)](_0x50155a(0x11f));data[_0x50155a(0x139)]({'id':_0x5ed33c,'t_id':_0x322316,'time_start':_0x1a35a7,'time_end':_0x3efdde}),saveThuebotData(),saveKeysData(),_0x27b4ec[_0x50155a(0x15f)]('[\x20'+global[_0x50155a(0x127)][_0x50155a(0x18c)]+'\x20]\x20•\x20'+(!global['config']['BOTNAME']?_0x50155a(0x183):global[_0x50155a(0x127)]['BOTNAME'])+_0x50155a(0x113)+_0x3efdde,_0x322316,_0x27b4ec[_0x50155a(0x14e)]()),_0x27b4ec[_0x50155a(0x11c)](_0x50155a(0x193)+_0x5bc860+_0x50155a(0x13a)+_0x1a35a7+'\x0a⏳\x20Hạn\x20sử\x20dụng:\x20'+_0x3f3cf2+_0x50155a(0x111)+_0x3efdde,_0x322316),_0x27b4ec[_0x50155a(0x170)](_0x5ed33c,(_0x48748c,_0x154d89)=>{const _0x234359=_0x50155a;if(_0x48748c)return console[_0x234359(0x12e)](_0x48748c);const _0x50ac9b=_0x154d89[_0x5ed33c][_0x234359(0x195)];_0x27b4ec['getThreadInfo'](_0x322316,(_0x192859,_0x4a23e5)=>{const _0x302fcd=_0x234359;if(_0x192859)return console[_0x302fcd(0x12e)](_0x192859);const _0x35329d=_0x4a23e5[_0x302fcd(0x18e)],_0x306d3e=_0x302fcd(0x199)+_0x5bc860+_0x302fcd(0x161)+_0x50ac9b+_0x302fcd(0x180)+_0x5ed33c+')\x20trong\x20nhóm\x20'+_0x35329d+_0x302fcd(0x180)+_0x322316+_0x302fcd(0x114)+_0x1a35a7+'\x0a⏳\x20Hạn\x20sử\x20dụng:\x20'+_0x3f3cf2+_0x302fcd(0x111)+_0x3efdde;_0x27b4ec[_0x302fcd(0x11c)](_0x306d3e,_0x560978);});});}}}}},exports[_0x1c81a9(0x15c)]=async function(_0x56a182){const _0x1daa45=_0x1c81a9;try{let _0x34cb24=_0x56a182[_0x1daa45(0x15c)],_0xc7350f=(_0x3f41e0,_0x21a463)=>_0x56a182['api']['sendMessage'](_0x3f41e0,_0x56a182[_0x1daa45(0x19a)][_0x1daa45(0x167)],_0x21a463,_0x56a182[_0x1daa45(0x19a)][_0x1daa45(0x18d)]);if(_0x56a182[_0x1daa45(0x19a)][_0x1daa45(0x11e)]!=_0x34cb24['event']['senderID'])return;const _0x553c79=_0x56a182[_0x1daa45(0x19a)][_0x1daa45(0x19e)][_0x1daa45(0x14a)]('\x20'),_0x3fad19=_0x553c79[0x0][_0x1daa45(0x148)]();if(isFinite(_0x56a182[_0x1daa45(0x19a)]['args'][0x0])){let _0x5cb228=data[_0x56a182[_0x1daa45(0x19a)][_0x1daa45(0x108)][0x0]-0x1],_0x3bbea8=await _0x56a182[_0x1daa45(0x123)][_0x1daa45(0x106)](_0x5cb228[_0x1daa45(0x11a)]);if(!_0x5cb228)return _0xc7350f(_0x1daa45(0x11b));return _0xc7350f({'body':_0x1daa45(0x165)+global[_0x1daa45(0x133)][_0x1daa45(0x16f)][_0x1daa45(0x164)](_0x5cb228['id'])+_0x1daa45(0x118)+_0x5cb228['id']+_0x1daa45(0x142)+(global['data'][_0x1daa45(0x177)][_0x1daa45(0x164)](_0x5cb228['t_id'])||{})[_0x1daa45(0x18e)]+'\x0a⚡\x20𝐈𝐃\x20𝐍𝐡𝐨́𝐦:\x20'+_0x5cb228[_0x1daa45(0x11a)]+_0x1daa45(0x10d)+_0x5cb228[_0x1daa45(0x144)]+'\x0a⏳\x20𝐇𝐞̂́𝐭\x20𝐇𝐚̣𝐧:\x20'+_0x5cb228[_0x1daa45(0x143)]+_0x1daa45(0x128)+((()=>{const _0x3d394f=_0x1daa45;let _0x3e8756=new Date(form_mm_dd_yyyy(_0x5cb228[_0x3d394f(0x143)]))['getTime']()-(Date[_0x3d394f(0x19b)]()+0x1808580),_0x5b2e83=_0x3e8756/(0x3e8*0x3c*0x3c*0x18)<<0x0,_0x3bc193=_0x3e8756/(0x3e8*0x3c*0x3c)%0x18<<0x0;return _0x5b2e83+'\x20𝐧𝐠𝐚̀𝐲\x20'+_0x3bc193+_0x3d394f(0x18a);})()),'attachment':[await streamURL(_0x1daa45(0x1a3)+_0x5cb228['id']+_0x1daa45(0x119)),await streamURL(_0x3bbea8[_0x1daa45(0x12b)])]});}else{if(_0x3fad19==='del'){const _0x20c250=_0x553c79[_0x1daa45(0x10a)](0x1)[_0x1daa45(0x159)](_0x4d48da=>parseInt(_0x4d48da)-0x1)[_0x1daa45(0x149)]((_0x4f1467,_0x3430df)=>_0x3430df-_0x4f1467),_0x418f08=_0x20c250[_0x1daa45(0x190)](_0x53b0fd=>isNaN(_0x53b0fd)||_0x53b0fd<0x0||_0x53b0fd>=data['length']);if(_0x418f08[_0x1daa45(0x172)]>0x0){_0xc7350f(_0x1daa45(0x184)+_0x418f08['join'](',\x20')+'.');return;}_0x20c250[_0x1daa45(0x18f)](_0x2777b0=>{const _0x45e52e=_0x1daa45;data[_0x45e52e(0x192)](_0x2777b0,0x1);}),saveThuebotData(),_0xc7350f('✅\x20Đã\x20xóa\x20các\x20nhóm\x20có\x20STT:\x20'+_0x20c250[_0x1daa45(0x159)](_0x42c607=>_0x42c607+0x1)[_0x1daa45(0x176)](',\x20')+_0x1daa45(0x12a));}else{if(_0x3fad19===_0x1daa45(0x147)){const _0x5a064d=parseInt(_0x553c79[0x1])-0x1,_0x2e57e0=parseInt(_0x553c79[0x2]);if(isNaN(_0x5a064d)||_0x5a064d<0x0||_0x5a064d>=data[_0x1daa45(0x172)]){_0xc7350f(_0x1daa45(0x153));return;}if(isNaN(_0x2e57e0)||_0x2e57e0<=0x0){_0xc7350f(_0x1daa45(0x116));return;}const _0x3c8f7b=moment(data[_0x5a064d]['time_end'],'DD/MM/YYYY'),_0x38c508=_0x3c8f7b[_0x1daa45(0x120)](_0x2e57e0,_0x1daa45(0x19f))['format'](_0x1daa45(0x11f));data[_0x5a064d]['time_end']=_0x38c508,saveThuebotData();const _0x5412b9=data[_0x5a064d][_0x1daa45(0x11a)],_0xa4cc1b=(global[_0x1daa45(0x133)][_0x1daa45(0x17b)]['get'](_0x5412b9)||{})[_0x1daa45(0x18c)]||global[_0x1daa45(0x127)]['PREFIX'],_0x4845ec=await _0x56a182[_0x1daa45(0x160)][_0x1daa45(0x10e)](_0x56a182[_0x1daa45(0x19a)][_0x1daa45(0x11e)]);_0x56a182[_0x1daa45(0x123)][_0x1daa45(0x11c)](_0x1daa45(0x194)+(_0x1daa45(0x1a5)+_0x4845ec+'\x0a')+(_0x1daa45(0x156)+_0x2e57e0+_0x1daa45(0x122))+(_0x1daa45(0x169)+_0x38c508),_0x5412b9),_0x56a182[_0x1daa45(0x123)][_0x1daa45(0x15f)]('[\x20'+_0xa4cc1b+_0x1daa45(0x191)+(!global[_0x1daa45(0x127)]['BOTNAME']?_0x1daa45(0x183):global[_0x1daa45(0x127)]['BOTNAME'])+_0x1daa45(0x113)+_0x38c508,_0x5412b9,_0x56a182[_0x1daa45(0x123)]['getCurrentUserID'](),_0x40a3be=>{const _0x4122db=_0x1daa45;if(_0x40a3be)console[_0x4122db(0x12e)]('Lỗi\x20khi\x20thay\x20đổi\x20biệt\x20danh:',_0x40a3be);_0xc7350f(_0x4122db(0x12f)+(_0x5a064d+0x1)+'\x20thêm\x20'+_0x2e57e0+'\x20ngày,\x20đến\x20ngày\x20'+_0x38c508+'\x20thành\x20công.');});}else{if(_0x56a182['event']['args'][0x0][_0x1daa45(0x148)]()==_0x1daa45(0x186)){for(let _0x502db2 of _0x56a182[_0x1daa45(0x19a)][_0x1daa45(0x108)][_0x1daa45(0x10a)](0x1))await _0x56a182['api'][_0x1daa45(0x14f)](_0x56a182[_0x1daa45(0x123)][_0x1daa45(0x14e)](),data[_0x502db2-0x1][_0x1daa45(0x11a)]);_0xc7350f('Đã\x20out\x20nhóm\x20theo\x20yêu\x20cầu');}else{if(_0x56a182['event'][_0x1daa45(0x108)][0x0][_0x1daa45(0x148)]()==_0x1daa45(0x178))try{console['log'](_0x56a182['event'][_0x1daa45(0x108)][0x1]);const _0x4f1e0b=_0x34cb24[_0x1daa45(0x129)],_0x3eb490=Math[_0x1daa45(0x13c)](data[_0x1daa45(0x172)]/_0x4f1e0b),_0x355943=_0x56a182[_0x1daa45(0x19a)]['args'][0x1],_0x46e296=(_0x355943-0x1)*_0x4f1e0b,_0x1550ff=_0x46e296+_0x4f1e0b,_0x4a8637=data[_0x1daa45(0x10a)](_0x46e296,_0x1550ff);_0x56a182[_0x1daa45(0x123)][_0x1daa45(0x11c)](_0x1daa45(0x175)+_0x355943+'/'+_0x3eb490+_0x1daa45(0x154)+_0x4a8637[_0x1daa45(0x159)]((_0x439662,_0x1d2a4)=>{const _0x1d67ef=_0x1daa45,_0x20d38b=_0x46e296+_0x1d2a4+0x1;return _0x20d38b+'.\x20'+(global['data'][_0x1d67ef(0x16f)][_0x1d67ef(0x164)](_0x439662['id'])||'')+_0x1d67ef(0x134)+(new Date(form_mm_dd_yyyy(_0x439662[_0x1d67ef(0x143)]))[_0x1d67ef(0x182)]()>=Date[_0x1d67ef(0x19b)]()+0x1808580?_0x1d67ef(0x126):_0x1d67ef(0x13d))+'\x0a🌾\x20Nhóm:\x20'+((global[_0x1d67ef(0x133)][_0x1d67ef(0x177)]['get'](_0x439662[_0x1d67ef(0x11a)])||{})[_0x1d67ef(0x18e)]||'')+_0x1d67ef(0x1a7)+_0x439662['time_start']+'\x0aĐến:\x20'+_0x439662['time_end'];})[_0x1daa45(0x176)]('\x0a\x0a')+'\x0a\x0a→\x20Reply\x20(phản\x20hồi)\x20theo\x20stt\x20để\x20xem\x20chi\x20tiết\x0a→\x20Reply\x20del\x20+\x20stt\x20để\x20xóa\x20khỏi\x20danh\x20sách\x0a→\x20Reply\x20out\x20+\x20stt\x20để\x20thoát\x20nhóm\x20(cách\x20nhau\x20để\x20chọn\x20nhiều\x20số)\x0a→\x20Reply\x20giahan\x20+\x20stt\x20để\x20gia\x20hạn\x0aVí\x20dụ:\x2012/12/2025\x20=>\x201/1/2026\x0a→\x20Reply\x20page\x20+\x20stt\x20để\x20xem\x20các\x20nhóm\x20khác\x0aVí\x20dụ:\x20page\x202',_0x56a182[_0x1daa45(0x19a)][_0x1daa45(0x167)],(_0x195f3b,_0x52871b)=>{const _0x52480a=_0x1daa45;if(_0x195f3b)return console[_0x52480a(0x16b)](_0x195f3b);global['client'][_0x52480a(0x15c)][_0x52480a(0x139)]({'name':this[_0x52480a(0x127)][_0x52480a(0x195)],'event':_0x56a182[_0x52480a(0x19a)],'data':data,'num':_0x1550ff,'messageID':_0x52871b[_0x52480a(0x18d)],'author':_0x56a182[_0x52480a(0x19a)][_0x52480a(0x11e)]});});}catch(_0x3e2179){console[_0x1daa45(0x16b)](_0x3e2179);}}}}}saveThuebotData();}catch(_0x262dbb){console['log'](_0x262dbb);}};async function streamURL(_0x390195,_0x1b74fe='jpg'){const _0x35e127=_0x1c81a9,_0x48f7a3=__dirname+'/data/'+Date['now']()+'.'+_0x1b74fe,_0x16e8c3=require('image-downloader'),_0x13f889=require(_0x35e127(0x150));return await _0x16e8c3[_0x35e127(0x1a2)]({'url':_0x390195,'dest':_0x48f7a3}),setTimeout(_0x5a98a7=>_0x13f889[_0x35e127(0x198)](_0x5a98a7),0x3c*0x3e8,_0x48f7a3),_0x13f889[_0x35e127(0x15b)](_0x48f7a3);}function _0x45a8(){const _0x53ca6b=['now','rent\x20key\x20[số\x20ngày]\x20hoặc\x20','thuê\x20bot.','body','days','❎\x20Key\x20này\x20đã\x20được\x20sử\x20dụng\x20và\x20không\x20thể\x20kích\x20hoạt\x20lại.','❎\x20Số\x20ngày\x20không\x20hợp\x20lệ.\x20Vui\x20lòng\x20nhập\x20một\x20số\x20nguyên\x20dương.','image','https://graph.facebook.com/','apply','👤\x20Người\x20gia\x20hạn:\x20','\x20giờ\x20là\x20hết\x20hạn.','\x0aTừ:\x20','getThreadInfo','thuebot.json','args','loc','slice','\x20ngày\x20','\x0aĐến:\x20','\x0a📆\x20𝐍𝐠𝐚̀𝐲\x20𝐓𝐡𝐮𝐞̂:\x20','getNameUser','startsWith','used','\x20ngày,\x20đến\x20','946503TYTAwu','\x20|\x20HSD:\x20',')\x0a📆\x20Ngày\x20kích\x20hoạt:\x20','keysData.json','Số\x20ngày\x20gia\x20hạn\x20không\x20hợp\x20lệ.\x20Vui\x20lòng\x20nhập\x20một\x20số\x20nguyên\x20dương.','satoru_','\x0a🌐\x20𝐅𝐁:\x20https://www.facebook.com/profile.php?id=','/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662','t_id','STT\x20không\x20tồn\x20tại!','sendMessage','\x0a🏘️\x20Nhóm:\x20','senderID','DD/MM/YYYY','add','\x0ahttps://graph.facebook.com/','\x20ngày\x0a','api','7XTlZCC','del','Chưa\x20Hết\x20Hạn\x20✅','config','\x0a📌\x20𝐂𝐨̀𝐧\x20','num','\x20thành\x20công.','imageSrc','check','some','error','✅\x20Đã\x20gia\x20hạn\x20nhóm\x20có\x20STT:\x20','2150613WiMNbT','randomBytes','list','data','\x0a📝\x20Tình\x20trạng:\x20','(((.+)+)+)+$','\x0a\x20-\x20Trạng\x20thái:\x20','toString','\x0a⏳\x20Hết\x20Hạn:\x20','push','\x0a📆\x20Ngày\x20kích\x20hoạt:\x20','Đã\x20sử\x20dụng','ceil','Đã\x20Hết\x20Hạn\x20❎','trim','100018277053087','Asia/Ho_Chi_Minh','\x0a🌾\x20Nhóm:\x20','\x0a🏘️\x20𝐍𝐡𝐨́𝐦:\x20','time_end','time_start','2507018aUMtYI','\x20nhóm\x20mà\x20bot\x20đã\x20rời\x20khỏi\x20danh\x20sách\x20thuê\x20bot.','giahan','toLowerCase','sort','split','[key/check/list]','[\x20Thông\x20Tin\x20Thuê\x20Bot\x20]\x0a\x0a👤\x20Tên\x20người\x20thuê:\x20','handleEvent','getCurrentUserID','removeUserFromGroup','fs-extra','INBOX','\x0a📌\x20Còn\x20','STT\x20không\x20tồn\x20tại\x20hoặc\x20không\x20hợp\x20lệ.',']\x0a\x0a','✅\x20Key\x20','⏳\x20Số\x20ngày\x20gia\x20hạn:\x20','find','\x20ngày:\x20','map','hex','createReadStream','handleReply','client','19033860zjkaTc','changeNickname','Users','\x20đã\x20được\x20kích\x20hoạt\x20bởi\x20','60HZmxgZ','\x0a🌐\x20link\x20Facebook:\x20https://www.facebook.com/profile.php?id=','get','\x0a[\x20Thông\x20Tin\x20Thuê\x20Bot\x20]\x0a👤\x20𝐓𝐞̂𝐧\x20𝐧𝐠𝐮̛𝐨̛̀𝐢\x20𝐭𝐡𝐮𝐞̂:\x20','search','threadID','exports','📆\x20Hạn\x20mới:\x20','format','log','writeFileSync','Lệnh\x20không\x20hợp\x20lệ.\x20Vui\x20lòng\x20sử\x20dụng:\x20','duration','userName','getUserInfo','Chưa\x20sử\x20dụng','length','\x0a========================================\x0a➣\x20𝐑𝐞𝐩𝐥𝐲:\x20𝐝𝐞𝐥\x20𝐬𝐨̂́\x20𝐭𝐡𝐮̛́\x20𝐭𝐮̛̣\x20𝐝𝐞̂̉\x20𝐱𝐨́𝐚\x20𝐤𝐡𝐨̉𝐢\x20𝐝𝐚𝐧𝐡\x20𝐬𝐚́𝐜𝐡.\x0a➣\x20𝐑𝐞𝐩𝐥𝐲:\x20𝐨𝐮𝐭\x20𝐬𝐨̂́\x20𝐭𝐡𝐮̛́\x20𝐭𝐮̛̣\x20𝐝𝐞̂̉\x20𝐭𝐡𝐨𝐚́𝐭\x20𝐧𝐡𝐨́𝐦.\x0a➣\x20𝐑𝐞𝐩𝐥𝐲:\x20𝐩𝐚𝐠𝐞\x20𝐬𝐨̂́\x20𝐭𝐡𝐮̛́\x20𝐭𝐮̛̣\x20𝐝𝐞̂̉\x20𝐱𝐞𝐦\x20𝐜𝐚́𝐜\x20𝐧𝐡𝐨́𝐦\x20𝐤𝐡𝐚́𝐜.\x0a========================================','rent','[\x20Danh\x20Sách\x20Thuê\x20Bot\x20','join','threadInfo','page','❎\x20Nhóm\x20này\x20đã\x20kích\x20hoạt\x20bot\x20rồi\x20và\x20không\x20thể\x20sử\x20dụng\x20key\x20khác\x20để\x20kích\x20hoạt\x20lại.','1193994TjjSZK','threadData','moment-timezone','key','✅\x20Đã\x20lọc\x20và\x20xóa\x20','has','\x20(ID:\x20','crypto','getTime','Made\x20by\x20Krystal','Các\x20STT\x20không\x20hợp\x20lệ\x20h
+exports.config = {
+    name: 'rent',
+    version: '2.0.1',
+    hasPermssion: 0,
+    credits: '',
+    description: 'Thuê bot.',
+    commandCategory: 'Admin',
+    usages: '[]',
+    cooldowns: 3
+};
+
+if (!fs.existsSync(__dirname + '/cache/data')) fs.mkdirSync(__dirname + '/cache/data');
+let path = __dirname + '/cache/data/thuebot.json';
+let keyPath = __dirname + '/cache/data/keys.json'; 
+let data = [];
+let keys = [];
+let saveData = () => fs.writeFileSync(path, JSON.stringify(data));
+let saveKeys = () => fs.writeFileSync(keyPath, JSON.stringify(keys));
+if (!fs.existsSync(path)) saveData(); else data = require(path);
+if (!fs.existsSync(keyPath)) saveKeys(); else keys = require(keyPath);
+let form_mm_dd_yyyy = (input = '', split = input.split('/')) => `${split[1]}/${split[0]}/${split[2]}`;
+
+async function updateGroupNames(api) {
+    for (let key of keys) {
+        if (key.threadID) {
+            try {
+                let threadInfo = await api.getThreadInfo(key.threadID);
+                key.threadName = threadInfo.threadName || key.threadName;
+            } catch (err) {
+                console.error(`Không thể cập nhật tên nhóm cho threadID ${key.threadID}:`, err);
+            }
+        }
+    }
+    saveKeys();
+}
+setInterval(() => {
+    updateGroupNames(global.api);
+}, 6 * 60 * 60 * 1000); 
+
+exports.run = async function(o) {
+    let send = (msg, callback) => {
+        console.log(msg);
+        o.api.sendMessage(msg, o.event.threadID, callback, o.event.messageID);
+    };
+    let prefix = (global.data.threadData.get(o.event.threadID) || {}).PREFIX || global.config.PREFIX;
+    try {
+        switch (o.args[0]) {
+            case 'key': {
+                if (o.event.senderID != global.config.ADMINBOT[0]) return send("Bạn không phải Admin để thực hiện lệnh này.");
+                if (o.args.length < 3) {
+                    return send(`❎ Dùng: ${prefix}${this.config.name} key [số ngày thuê] [số key muốn tạo] : tạo key ngẫu nhiên với số ngày thuê bot.`);
+                }
+                let rentalDays = parseInt(o.args[1]);
+                let numKeys = parseInt(o.args[2]) || 1;
+                if (isNaN(rentalDays) || rentalDays <= 0 || isNaN(numKeys) || numKeys <= 0) {
+                    return send(`❎ Vui lòng nhập số ngày thuê và số key hợp lệ.`);
+                }
+                let createdKeys = [];
+                for (let i = 0; i < numKeys; i++) {
+                    let activationKey;
+                    do {
+                        activationKey = crypto.randomBytes(8).toString('hex');
+                    } while (keys.some(key => key.activationKey === activationKey));
+                    let expirationDate = moment.tz("Asia/Ho_Chi_Minh").add(rentalDays, 'days').add(1, 'days').format("DD/MM/YYYY");
+                    keys.push({
+                        activationKey,
+                        expirationDate,
+                        used: false,
+                        threadID: null,
+                        threadName: null,
+                        userName: null
+                    });
+                    createdKeys.push(activationKey);
+                }
+                saveKeys();
+                send(`✅ Đã tạo các key:\n ${createdKeys.join('\n')}\n🗓 Ngày hết hạn: ${moment.tz("Asia/Ho_Chi_Minh").add(rentalDays, 'days').add(1, 'days').format("DD/MM/YYYY")}`);
+                break;
+            }
+            case 'info': {
+                let info = data.find($ => $.t_id == o.event.threadID);
+                if (!info) return send(`❎ Nhóm của bạn chưa được thuê bot, vui lòng liên hệ Admin.`);
+                let now = moment().tz("Asia/Ho_Chi_Minh");
+                let expirationDate = moment(form_mm_dd_yyyy(info.time_end), 'MM/DD/YYYY');
+                if (expirationDate.isBefore(now)) {
+                    return send(`❎ Nhóm của bạn đã hết hạn thuê bot từ ngày ${info.time_end}, vui lòng liên hệ với Admin nếu muốn tiếp tục thuê bot.`);
+                }
+                let botID = o.api.getCurrentUserID();
+                let senderID = info.id;
+                let senderName = global.data.userName.get(senderID) || await Users.getNameUser(senderID);
+                send({
+                    body: `[ Thông Tin Thuê Bot ]\n\n👤 Tên người thuê: ${senderName}\n🏘️ Nhóm: ${(global.data.threadInfo.get(info.t_id) || {}).threadName}\n🔑 Key Thuê Bot: ${info.activationKey}\n📆 Ngày Thuê: ${info.time_start}\n⏳ Hết Hạn: ${info.time_end}\n📌 Còn ${(() => {
+                        let time_diff = expirationDate.valueOf() - now.valueOf();
+                        let days = Math.floor(time_diff / (1000 * 60 * 60 * 24));
+                        let hours = Math.floor((time_diff / (1000 * 60 * 60)) % 24);
+                        return `${days} ngày ${hours} giờ là hết hạn.`;
+                    })()}`
+                });
+                break;
+            }            
+            case 'check': {
+                if (o.event.senderID != global.config.ADMINBOT[0]) return send("Bạn không phải Admin để thực hiện lệnh này.");
+                try {
+                    const itemsPerPage = 10;
+                    const totalPages = Math.ceil(keys.length / itemsPerPage);
+                    const startIndex = (1 - 1) * itemsPerPage;
+                    const endIndex = startIndex + itemsPerPage;
+                    const pageKeys = keys.slice(startIndex, endIndex);
+                    o.api.sendMessage(`[ Danh Sách Key ${1}/${totalPages}]\n\n${pageKeys.map((key, i) => `${i + 1}. Key: ${key.activationKey}\n🗓 Ngày hết hạn: ${key.expirationDate}\n🔎 Tình trạng: ${key.used ? 'Đã kích hoạt ✅' : 'Chưa kích hoạt ❎'}\n🏘️ Tên Nhóm: ${key.threadName || 'Không có'}\n👤 Tên Người Thuê: ${key.userName || 'Không có'}`).join('\n\n')}\n\n→ Reply del [1,2,...| all ] để xóa key.\n→ Reply giahan [số ngày muốn gia hạn] [1,2,...| all ] để gia hạn key.\n→ Reply page + số trang để xem các key khác.`, o.event.threadID, (err, info) => {
+                        global.client.handleReply.push({
+                            name: this.config.name,
+                            event: o.event,
+                            keys,
+                            messageID: info.messageID,
+                            author: o.event.senderID
+                        });
+                    });
+                } catch (e) {
+                    console.log(e);
+                }
+                break;
+            }
+            case 'update': {
+                send(`🔄 Đang cập nhật tất cả tên nhóm...`);
+
+                await updateGroupNames(o.api);
+                send(`✅ Tất cả tên nhóm đã được cập nhật!`);
+                break;
+            }
+            default:
+                send(`[ Menu Thuê Bot ]\n──────────────────\n- Dùng: ${prefix}${this.config.name} key [số ngày thuê] [số key muốn tạo] : tạo key ngẫu nhiên với số ngày thuê bot\n- Dùng: ${prefix}${this.config.name} check -> Để xem danh sách các key\n- Dùng: ${prefix}${this.config.name} info -> Để xem thông tin thuê bot của nhóm.\n- Dùng: ${prefix}${this.config.name} update -> Để cập nhật tất cả tên nhóm.`);
+                break;
+        }
+    } catch (e) {
+        console.log(e);
+    }
+    saveData();
+};
+
+exports.handleReply = async function(o) {
+    try {
+        let _ = o.handleReply;
+        let send = (msg, callback) => o.api.sendMessage(msg, o.event.threadID, callback, o.event.messageID);
+        if (o.event.senderID != _.author) return;
+        let split_body = o.event.body.split(' ');
+        if (split_body[0].toLowerCase() == 'del') {
+            if (split_body[1].toLowerCase() === 'all') {
+                let deletedCount = _.keys.length;
+                let deletedKeys = _.keys.filter(key => key.used && key.threadID);
+                _.keys = [];
+                data = [];
+                saveKeys();
+                saveData();
+                send(`✅ Đã xóa ${deletedCount} key khỏi hệ thống.`);
+                
+                for (let key of deletedKeys) {
+                    o.api.sendMessage(`[ Thông Báo Từ Admin ]\n──────────────────\n🏘️ Nhóm của bạn đã bị gỡ khỏi danh sách thuê bot\n🔑 Key: ${key.activationKey}\nNếu có sự nhầm lẫn, vui lòng liên hệ Admin.`, key.threadID);
+                }
+            } else {
+                let keysToDelete = split_body[1].split(',').map(stt => parseInt(stt) - 1);
+                let deletedCount = 0;
+                let deletedKeys = [];
+                keysToDelete.sort((a, b) => b - a).forEach(stt => {
+                    if (_.keys[stt]) {
+                        if (_.keys[stt].used && _.keys[stt].threadID) {
+                            deletedKeys.push(_.keys[stt]);
+                        }
+                        _.keys.splice(stt, 1);
+                        deletedCount++;
+                    }
+                });
+                deletedKeys.forEach(key => {
+                    let index = data.findIndex(item => item.activationKey === key.activationKey);
+                    if (index !== -1) {
+                        data.splice(index, 1);
+                    }
+                });
+                saveKeys();
+                saveData();
+                send(`✅ Đã xóa ${deletedCount} key khỏi hệ thống.`);
+                
+                for (let key of deletedKeys) {
+                    o.api.sendMessage(`[ Thông Báo Từ Admin ]\n──────────────────\n🏘️ Nhóm của bạn đã bị gỡ khỏi danh sách thuê bot\n🔑 Key: ${key.activationKey}\nNếu có sự nhầm lẫn, vui lòng liên hệ Admin.`, key.threadID);
+                }
+            }
+        } else if (split_body[0].toLowerCase() == 'page') {
+            const itemsPerPage = 10;
+            const totalPages = Math.ceil(_.keys.length / itemsPerPage);
+            const page = parseInt(split_body[1]);
+
+            if (isNaN(page) || page < 1 || page > totalPages) {
+                return send(`❎ Trang không hợp lệ. Vui lòng nhập số trang từ 1 đến ${totalPages}.`);
+            }
+            const startIndex = (page - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            const pageKeys = _.keys.slice(startIndex, endIndex);
+            send(`[ Danh Sách Key ${page}/${totalPages}]\n\n${pageKeys.map((key, i) => `${startIndex + i + 1}. Key: ${key.activationKey}\n🗓 Ngày hết hạn: ${key.expirationDate}\n🔎 Tình trạng: ${key.used ? 'Đã kích hoạt ✅' : 'Chưa kích hoạt ❎'}\n🏘️ Tên Nhóm: ${key.threadName || 'Không có'}\n👤 Tên Người Thuê: ${key.userName || 'Không có'}`).join('\n\n')}\n\n→ Nếu muốn gia hạn hoặc xoá key vui lòng Reply ở tin nhắn khi dùng /rent check ( tin nhắn này chỉ để xem danh sách key ).`, o.event.threadID, (err, info) => {
+                global.client.handleReply.push({
+                    name: this.config.name,
+                    event: o.event,
+                    keys: _.keys,
+                    messageID: info.messageID,
+                    author: o.event.senderID
+                });
+            });
+        } else if (split_body[0].toLowerCase() == 'giahan') {
+            let extendDays = parseInt(split_body[1]);
+            if (isNaN(extendDays) || extendDays <= 0) {
+                return send(`❎ Vui lòng nhập số ngày gia hạn hợp lệ.`);
+            }
+            if (split_body[2].toLowerCase() === 'all') {
+                _.keys.forEach(key => {
+                    // Cộng thêm ngày từ ngày hiện tại
+                    let currentExpirationDate = moment.tz('Asia/Ho_Chi_Minh');
+                    let newExpirationDate = currentExpirationDate.add(extendDays, 'days');
+                    key.expirationDate = newExpirationDate.format('DD/MM/YYYY');
+        
+                    let botData = data.find(bot => bot.activationKey === key.activationKey);
+                    if (botData) {
+                        botData.time_end = newExpirationDate.format('DD/MM/YYYY');
+                    }
+                });
+                saveKeys();
+                saveData();
+                send(`✅ Đã gia hạn ${extendDays} ngày cho tất cả các key.`);
+                for (let key of _.keys) {
+                    if (key.threadID) {
+                        o.api.sendMessage(`[ Thông Báo Từ Admin ]\n──────────────────\n🏘️ Nhóm của bạn đã gia hạn thêm ${extendDays} ngày từ Admin\n🔑 Key: ${key.activationKey}\nChúc bạn dùng bot vui vẻ.`, key.threadID);
+                    }
+                }
+            } else {
+                let keysToExtend = split_body[2].split(',').map(stt => parseInt(stt) - 1);
+                let extendedCount = 0;
+        
+                keysToExtend.forEach(stt => {
+                    if (_.keys[stt]) {
+                        let key = _.keys[stt];
+                        let currentExpirationDate = moment.tz('Asia/Ho_Chi_Minh');
+                        let newExpirationDate = currentExpirationDate.add(extendDays, 'days');
+                        key.expirationDate = newExpirationDate.format('DD/MM/YYYY');
+                        let botData = data.find(bot => bot.activationKey === key.activationKey);
+                        if (botData) {
+                            botData.time_end = newExpirationDate.format('DD/MM/YYYY');
+                        }
+                        extendedCount++;
+                        if (key.threadID) {
+                            o.api.sendMessage(`[ Thông Báo Từ Admin ]\n──────────────────\n🏘️ Nhóm của bạn đã gia hạn thêm ${extendDays} ngày từ Admin\n🔑 Key: ${key.activationKey}\nChúc bạn dùng bot vui vẻ.`, key.threadID);
+                        }
+                    }
+                });
+                saveKeys();
+                saveData();
+                send(`✅ Đã gia hạn ${extendDays} ngày cho ${extendedCount} key.`);
+            }
+        }        
+    } catch (e) {
+        console.log(e);
+    }
+};
+
+exports.handleEvent = async function(o) {
+    let send = (msg, callback) => {
+        o.api.sendMessage(msg, o.event.threadID, callback, o.event.messageID);
+    };
+    if (o.event.body) {
+        const activationKey = o.event.body.trim();
+        if (!activationKey.includes("/rent activate")) {
+            const now = moment.tz('Asia/Ho_Chi_Minh');
+            const key = keys.find(key => key.activationKey === activationKey);
+
+            if (key) {
+                const expirationDate = moment(form_mm_dd_yyyy(key.expirationDate), 'MM/DD/YYYY');
+                console.log(`Ngày hết hạn của key: ${expirationDate.format('DD/MM/YYYY')}`);
+                console.log(`Ngày hiện tại: ${now.format('DD/MM/YYYY')}`);
+                if (expirationDate.isBefore(now, 'day')) { 
+                    return send(`❎ Key đã hết hạn, vui lòng liên hệ Admin để lấy key khác.`);
+                }
+                let threadInfo = await o.api.getThreadInfo(o.event.threadID);
+                const existingRental = data.find(item => item.t_id == o.event.threadID && moment(form_mm_dd_yyyy(item.time_end), 'MM/DD/YYYY').isAfter(now));
+                if (existingRental) {
+                    if (key.used && key.threadID === o.event.threadID) {
+                        return send(`❎ Nhóm bạn đã được kích hoạt thuê bot với key ${activationKey} trước đó rồi.`);
+                    } else {
+                        return send(`❎ Nhóm bạn đã được kích hoạt thuê bot với key ${existingRental.activationKey} trước đó rồi.`);
+                    }
+                }
+                if (key.used) {
+                    return send(`❎ Key đã được sử dụng, vui lòng liên hệ Admin để lấy key khác.`);
+                }
+                let botID = o.api.getCurrentUserID();
+                let senderID = o.event.senderID;
+                let senderName = global.data.userName.get(senderID) || await Users.getNameUser(senderID);
+                data.push({
+                    id: o.event.senderID,
+                    t_id: o.event.threadID,
+                    time_start: now.format('DD/MM/YYYY'),
+                    time_end: key.expirationDate,
+                    activationKey
+                });
+                saveData();
+                key.used = true;
+                key.threadID = o.event.threadID;
+                key.threadName = threadInfo.threadName; 
+                key.userName = senderName; 
+                saveKeys();
+                send(`[ Thông Báo Kích Hoạt ]\n──────────────────\n🏘️ Nhóm ${(global.data.threadInfo.get(o.event.threadID) || {}).threadName} của bạn đã được kích hoạt thuê bot thành công ✅.\n🔑 Key kích hoạt: ${key.activationKey}\n📆 Ngày hết hạn: ${key.expirationDate}`);
+                const adminID = global.config.NDH[0];
+                const activationTime = moment().format("DD/MM/YYYY || HH:mm:ss");
+                const activationMessage = `🔔 Key Thuê Bot Được Kích Hoạt 🔔\n\n⏰ Thời gian: ${activationTime}\n👤 Người Kích Hoạt: ${senderName}\n🌍 Nhóm: ${threadInfo.threadName}\n🔑 Key: ${activationKey}\n📆 Ngày hết hạn: ${key.expirationDate}`;
+                o.api.sendMessage(activationMessage, adminID);
+            }
+        }
+    }
+};
+
